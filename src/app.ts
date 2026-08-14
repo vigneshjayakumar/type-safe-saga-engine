@@ -14,14 +14,14 @@ emitter
     "login",
     named("user name", (payload) => ({
       status: "continue",
-      data: { userName: "Vignesh" },
+      data: { userName: "John Doe" },
     })),
   )
   .use(
     "login",
     named("User Phone Number", (payload) => {
       payload.userName;
-      return { status: "continue", data: { phoneNumber: 90990990 } };
+      return { status: "continue", data: { phoneNumber: 999999999 } };
     }),
   )
   .use(
